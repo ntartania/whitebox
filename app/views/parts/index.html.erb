@@ -1,0 +1,47 @@
+<h1>Listing parts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Manufacturer</th>
+      <th>Series</th>
+      <th>Model number</th>
+      <th>Serial number</th>
+      <th>Rebate</th>
+      <th>Purchase price</th>
+      <th>Warranty period</th>
+      <th>Warranty expiry</th>
+      <th>Purchase date</th>
+      <th>Invoice number</th>
+      <th>Sales order number</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @parts.each do |part| %>
+      <tr>
+        <td><%= part.Product %></td>
+        <td><%= part.Manufacturer %></td>
+        <td><%= part.Series %></td>
+        <td><%= part.model_number %></td>
+        <td><%= part.serial_number %></td>
+        <td><%= part.rebate %></td>
+        <td><%= part.purchase_price %></td>
+        <td><%= part.warranty_period %></td>
+        <td><%= part.warranty_expiry %></td>
+        <td><%= part.purchase_date %></td>
+        <td><%= part.invoice_number %></td>
+        <td><%= part.sales_order_number %></td>
+        <td><%= link_to 'Show', part %></td>
+        <td><%= link_to 'Edit', edit_part_path(part) %></td>
+        <td><%= link_to 'Destroy', part, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Part', new_part_path %>

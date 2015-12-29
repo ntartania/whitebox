@@ -1,0 +1,65 @@
+<%= form_for(@part) do |f| %>
+  <% if @part.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@part.errors.count, "error") %> prohibited this part from being saved:</h2>
+
+      <ul>
+      <% @part.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Product %><br>
+    <%= f.text_field :Product %>
+  </div>
+  <div class="field">
+    <%= f.label :Manufacturer %><br>
+    <%= f.text_field :Manufacturer %>
+  </div>
+  <div class="field">
+    <%= f.label :Series %><br>
+    <%= f.text_field :Series %>
+  </div>
+  <div class="field">
+    <%= f.label :model_number %><br>
+    <%= f.number_field :model_number %>
+  </div>
+  <div class="field">
+    <%= f.label :serial_number %><br>
+    <%= f.number_field :serial_number %>
+  </div>
+  <div class="field">
+    <%= f.label :rebate %><br>
+    <%= f.check_box :rebate %>
+  </div>
+  <div class="field">
+    <%= f.label :purchase_price %><br>
+    <%= f.text_field :purchase_price %>
+  </div>
+  <div class="field">
+    <%= f.label :warranty_period %><br>
+    <%= f.text_field :warranty_period %>
+  </div>
+  <div class="field">
+    <%= f.label :warranty_expiry %><br>
+    <%= f.date_select :warranty_expiry %>
+  </div>
+  <div class="field">
+    <%= f.label :purchase_date %><br>
+    <%= f.date_select :purchase_date %>
+  </div>
+  <div class="field">
+    <%= f.label :invoice_number %><br>
+    <%= f.number_field :invoice_number %>
+  </div>
+  <div class="field">
+    <%= f.label :sales_order_number %><br>
+    <%= f.number_field :sales_order_number %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

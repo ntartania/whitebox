@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @part.Product %>
+</p>
+
+<p>
+  <strong>Manufacturer:</strong>
+  <%= @part.Manufacturer %>
+</p>
+
+<p>
+  <strong>Series:</strong>
+  <%= @part.Series %>
+</p>
+
+<p>
+  <strong>Model number:</strong>
+  <%= @part.model_number %>
+</p>
+
+<p>
+  <strong>Serial number:</strong>
+  <%= @part.serial_number %>
+</p>
+
+<p>
+  <strong>Rebate:</strong>
+  <%= @part.rebate %>
+</p>
+
+<p>
+  <strong>Purchase price:</strong>
+  <%= @part.purchase_price %>
+</p>
+
+<p>
+  <strong>Warranty period:</strong>
+  <%= @part.warranty_period %>
+</p>
+
+<p>
+  <strong>Warranty expiry:</strong>
+  <%= @part.warranty_expiry %>
+</p>
+
+<p>
+  <strong>Purchase date:</strong>
+  <%= @part.purchase_date %>
+</p>
+
+<p>
+  <strong>Invoice number:</strong>
+  <%= @part.invoice_number %>
+</p>
+
+<p>
+  <strong>Sales order number:</strong>
+  <%= @part.sales_order_number %>
+</p>
+
+<%= link_to 'Edit', edit_part_path(@part) %> |
+<%= link_to 'Back', parts_path %>

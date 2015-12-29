@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Product: MyString
+  Manufacturer: MyString
+  Series: MyString
+  model_number: 1
+  serial_number: 1
+  rebate: false
+  purchase_price: 1.5
+  warranty_period: MyString
+  warranty_expiry: 2015-12-29
+  purchase_date: 2015-12-29
+  invoice_number: 1
+  sales_order_number: 1
+
+two:
+  Product: MyString
+  Manufacturer: MyString
+  Series: MyString
+  model_number: 1
+  serial_number: 1
+  rebate: false
+  purchase_price: 1.5
+  warranty_period: MyString
+  warranty_expiry: 2015-12-29
+  purchase_date: 2015-12-29
+  invoice_number: 1
+  sales_order_number: 1
