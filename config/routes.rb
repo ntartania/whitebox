@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
+  root 'static_pages#home'
 
   get 'static_pages/help'
 
+  get 'stuff/something' => 'static_pages#help'
+  
   resources :parts
   resources :builds
   # The priority is based upon order of creation: first created -> highest priority.
